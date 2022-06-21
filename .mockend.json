@@ -1,18 +1,21 @@
 {
   "Product": {
     "tensp": {
-      "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
-    },
-    "gia": {
       "loremWords": {
         "minLength": 5,
         "maxLength": 20
       }
     },
+    "gia": {
+       "int": { 
+          "min": 100,
+          "max": 1000000
+         }
+    },
     "ngayhethan": {
-      "loremParagraphs": {
-        "minLength": 10,
-        "maxLength": 100
+      "dateTime": {
+        "min": "2010-01-01T00:00:00Z",
+        "max": "2020-12-31T23:59:59Z"
       }
     }
   }
